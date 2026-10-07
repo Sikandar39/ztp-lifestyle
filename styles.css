@@ -861,6 +861,36 @@ footer>div {
     }
 }
 
+:root[data-theme="dark"] .header-actions .bag {
+    color: var(--ink)
+}
+
+.catalog-empty {
+    grid-column: 1/-1;
+    color: var(--muted);
+    line-height: 1.8;
+    padding: 24px;
+    border: 1px solid var(--line)
+}
+
+.product-prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    white-space: nowrap
+}
+
+.product-prices del {
+    font-size: 10px;
+    font-weight: 400;
+    color: #888
+}
+
+:root[data-theme="dark"] .product-prices del {
+    color: #a5aba2
+}
+
 :root[data-theme="dark"] {
     --ink: #edf0e8;
     --paper: #151a16;

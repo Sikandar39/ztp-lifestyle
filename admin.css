@@ -1,0 +1,367 @@
+.admin-page {
+    min-height: 100vh
+}
+
+.admin-header {
+    height: 76px
+}
+
+.admin-header .header-actions {
+    gap: 25px
+}
+
+.admin-main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 70px 6vw 90px;
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 55px;
+    align-items: start
+}
+
+.admin-intro {
+    position: sticky;
+    top: 35px;
+    padding-top: 25px
+}
+
+.admin-intro h1 {
+    font: 500 clamp(56px, 7vw, 88px)/.96 var(--serif);
+    letter-spacing: -.05em;
+    margin: 0
+}
+
+.admin-intro h1 em {
+    color: #6b7f6c
+}
+
+.admin-intro>p:last-child {
+    max-width: 280px;
+    color: var(--muted);
+    line-height: 1.8
+}
+
+.login-card,
+.product-form,
+.catalog-panel {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 30px
+}
+
+.login-card h2 {
+    font: 500 36px var(--serif);
+    margin: 0 0 24px
+}
+
+.login-card form,
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.admin-page label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .03em;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.admin-page input:not([type=checkbox]):not([type=file]) {
+    font: 400 13px var(--sans);
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 13px 12px;
+    border-radius: 0;
+    outline: none
+}
+
+.admin-page input:focus {
+    border-color: #7c927d
+}
+
+.admin-page input[type=file] {
+    font: 400 11px var(--sans);
+    color: var(--muted);
+    padding: 10px 0
+}
+
+.login-card .button {
+    justify-content: center;
+    margin-top: 5px
+}
+
+.notice {
+    min-height: 18px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.55;
+    margin: 0
+}
+
+.notice.error {
+    color: #b44038
+}
+
+.notice.success {
+    color: #527755
+}
+
+.dashboard {
+    grid-column: 1/-1;
+    width: 100%
+}
+
+.dashboard-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 25px
+}
+
+.dashboard-top h2 {
+    font: 500 42px var(--serif);
+    margin: 0
+}
+
+.dashboard-top h2 span {
+    font: 500 12px var(--sans);
+    vertical-align: middle;
+    color: var(--muted);
+    padding: 7px 10px;
+    border: 1px solid var(--line);
+    border-radius: 30px
+}
+
+.admin-columns {
+    display: grid;
+    grid-template-columns: minmax(300px, .75fr) 1.25fr;
+    gap: 20px;
+    align-items: start
+}
+
+.form-title,
+.catalog-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.form-title h3,
+.catalog-heading h3 {
+    font: 500 22px var(--serif);
+    margin: 0
+}
+
+.plain-button {
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font: 500 11px var(--sans);
+    cursor: pointer
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px
+}
+
+.check-label {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 9px !important;
+    font-weight: 400 !important
+}
+
+.check-label input {
+    accent-color: #344938
+}
+
+.field-hint {
+    font-size: 10px;
+    color: var(--muted);
+    margin: -10px 0 0
+}
+
+.save-button {
+    justify-content: center;
+    margin-top: 3px
+}
+
+.catalog-heading {
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--line)
+}
+
+.admin-products {
+    display: flex;
+    flex-direction: column
+}
+
+.admin-product {
+    display: grid;
+    grid-template-columns: 72px 1fr auto;
+    gap: 13px;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line)
+}
+
+.admin-thumb {
+    width: 72px;
+    height: 82px;
+    background: #e8e6de center/cover
+}
+
+.admin-product h4 {
+    font: 500 17px var(--serif);
+    margin: 0 0 5px
+}
+
+.admin-product p {
+    font-size: 10px;
+    color: var(--muted);
+    margin: 3px 0
+}
+
+.admin-product-actions {
+    display: flex;
+    gap: 12px
+}
+
+.admin-product-actions button {
+    font: 500 10px var(--sans);
+    background: none;
+    border: 0;
+    text-decoration: underline;
+    color: var(--ink);
+    cursor: pointer
+}
+
+.admin-product-actions .delete-button {
+    color: #a43d35
+}
+
+.admin-empty {
+    padding: 28px 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7
+}
+
+.admin-footer {
+    border-top: 1px solid var(--line);
+    padding: 22px 6vw;
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 10px
+}
+
+.admin-page .button-dark {
+    background: var(--ink);
+    color: var(--paper)
+}
+
+:root[data-theme="dark"] .admin-intro h1 em {
+    color: #a9c0a5
+}
+
+:root[data-theme="dark"] .admin-thumb {
+    background-color: #272c27
+}
+
+@media(max-width:800px) {
+    .admin-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 45px 5vw 65px
+    }
+
+    .admin-intro {
+        position: static;
+        padding: 0
+    }
+
+    .admin-intro h1 {
+        font-size: 66px
+    }
+
+    .admin-columns {
+        grid-template-columns: 1fr
+    }
+
+    .dashboard {
+        grid-column: auto
+    }
+
+    .admin-header {
+        padding: 0 5vw
+    }
+}
+
+@media(max-width:480px) {
+    .admin-header .brand img {
+        width: 115px
+    }
+
+    .admin-header .text-link {
+        font-size: 10px
+    }
+
+    .admin-main {
+        padding-top: 35px
+    }
+
+    .login-card,
+    .product-form,
+    .catalog-panel {
+        padding: 22px
+    }
+
+    .dashboard-top {
+        align-items: start;
+        gap: 15px;
+        flex-direction: column
+    }
+
+    .dashboard-top h2 {
+        font-size: 36px
+    }
+
+    .admin-product {
+        grid-template-columns: 58px 1fr auto;
+        gap: 9px
+    }
+
+    .admin-thumb {
+        width: 58px;
+        height: 68px
+    }
+
+    .admin-product-actions {
+        flex-direction: column;
+        gap: 7px
+    }
+
+    .admin-product h4 {
+        font-size: 15px
+    }
+
+    .admin-product p {
+        font-size: 9px
+    }
+
+    .form-row {
+        gap: 8px
+    }
+}

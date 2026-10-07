@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111713">
+  <meta name="description"
+    content="Discover considered style from ZTP Lifestyle: clothing, shoes and watches for every day.">
+  <title>ZTP Lifestyle — Wear your way</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="announcement">A little something for your next look <span>— enjoy 10% off your first order</span></div>
+  <header class="header">
+    <button class="menu-button" aria-label="Open menu" id="menuToggle">☰</button>
+    <a class="brand" href="#home" aria-label="ZTP Lifestyle home"><img src="assets/logo.svg" alt="ZTP Lifestyle"></a>
+    <nav class="nav" id="nav"><a href="#new">New arrivals</a><a href="#shop">Clothing</a><a href="#shop">Shoes</a><a
+        href="#shop">Watches</a><a href="#offers">Offers</a></nav>
+    <div class="header-actions"><button class="theme-toggle" id="themeToggle" type="button"
+        aria-label="Switch to dark theme" title="Switch theme">◐ <span>Theme</span></button><a class="bag"
+        href="#contact" aria-label="Contact us">Contact <span>↗</span></a></div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY, ELEVATED</p>
+        <h1>Good style.<br><em>Good feeling.</em></h1>
+        <p class="hero-text">Pieces that feel like you, wherever the day takes you. Find your next favourite at ZTP
+          Lifestyle.</p><a class="button button-dark" href="#shop">Explore the collection <span>↗</span></a>
+        <div class="hero-note"><span class="dot"></span> A fresh take on everyday essentials</div>
+      </div>
+      <div class="hero-image" role="img" aria-label="Model in relaxed modern clothing">
+        <div class="image-caption">MADE FOR THE WAY YOU MOVE <span>01 / 03</span></div>
+      </div>
+      <div class="hero-stamp">ZTP<br><small>YOUR STYLE, YOUR STORY</small></div>
+    </section>
+    <section class="category-strip" id="shop"><a class="category"
+        href="#products"><span>01</span><strong>Clothing</strong><b>↗</b></a><a class="category"
+        href="#products"><span>02</span><strong>Shoes</strong><b>↗</b></a><a class="category"
+        href="#products"><span>03</span><strong>Watches</strong><b>↗</b></a><a class="category"
+        href="#products"><span>04</span><strong>Accessories</strong><b>↗</b></a></section>
+    <section class="section products-section" id="new">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">JUST LANDED</p>
+          <h2>New arrivals</h2>
+        </div><a class="text-link" href="#products">Shop all new <span>↗</span></a>
+      </div>
+      <div class="products" id="products"></div>
+    </section>
+    <section class="offer" id="offers">
+      <div class="offer-art">
+        <div class="offer-circle">A GOOD<br>DEAL, WELL<br><em>WORN.</em></div>
+      </div>
+      <div class="offer-copy">
+        <p class="eyebrow">A LITTLE EXTRA</p>
+        <h2>Good things<br>come around.</h2>
+        <p>Find a new favourite for less. Explore selected styles in our latest offers while they're here.</p><a
+          class="button button-light" href="#products">Shop the offers <span>↗</span></a>
+      </div>
+      <div class="offer-tag">UP TO<br><strong>30%</strong><br>OFF</div>
+    </section>
+    <section class="promise">
+      <p class="eyebrow">THE ZTP WAY</p>
+      <h2>Style should feel<br><em>like you.</em></h2>
+      <div class="promise-row">
+        <div><span>01</span>
+          <h3>Easy to wear</h3>
+          <p>Thoughtful everyday pieces, picked to make getting dressed feel simple.</p>
+        </div>
+        <div><span>02</span>
+          <h3>Made to move</h3>
+          <p>Looks that take you from slow mornings to plans that run late.</p>
+        </div>
+        <div><span>03</span>
+          <h3>Always personal</h3>
+          <p>Your style is your own. We're here to help you find it.</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div>
+        <p class="eyebrow">LET'S TALK STYLE</p>
+        <h2>Need a hand?<br><em>We're right here.</em></h2>
+      </div>
+      <div class="contact-details">
+        <p>Questions about sizing, an order, or what to wear next? We'd love to hear from you.</p><a
+          href="mailto:hello@ztplifestyle.com">hello@ztplifestyle.com <span>↗</span></a><a href="https://instagram.com/"
+          target="_blank" rel="noreferrer">Follow along on Instagram <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#home"><img src="assets/logo.svg" alt="ZTP Lifestyle"></a><span>Wear your
+      way. © <span id="year"></span> ZTP Lifestyle.</span>
+    <div><a href="#shop">Shop</a><a href="#contact">Contact</a><a href="https://instagram.com/" target="_blank"
+        rel="noreferrer">Instagram ↗</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
